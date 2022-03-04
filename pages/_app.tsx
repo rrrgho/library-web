@@ -1,4 +1,5 @@
 import type { AppProps } from "next/app";
+import '../styles/globals.css'
 import { StylesProvider } from "@material-ui/core/styles";
 import { ThemeProvider } from "styled-components";
 import MuiGlobalTheme from "./mui.global.theme";
