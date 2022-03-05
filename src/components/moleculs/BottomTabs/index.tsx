@@ -9,6 +9,7 @@ import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
 import HistoryIcon from '@mui/icons-material/History';
 import ManageAccountsIcon from '@mui/icons-material/ManageAccounts';
 import THEME from "../../../theme";
+import Router from 'next/router'
 
 
 
@@ -29,7 +30,7 @@ const BottomTabs: FC = () => {
                     </TabBox>
                 </Box>
                 <Box component={Grid} item xs={2}>
-                    <TabBox onClick={() => {alert("Tab is clicked")}}>
+                    <TabBox onClick={() => { Router.push('books') }}>
                         <LibraryBooksIcon sx={{fontSize:30, color:'#888'}} />
                         <Typography sx={{fontSize:12, color:'#888'}}>Buku</Typography>
                     </TabBox>
